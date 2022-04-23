@@ -12,6 +12,12 @@ body {
   display: flex;
 }
 
+.logo-img {
+    border: 1px solid #c5bdbd; 
+    border-radius: 25%; 
+    width: 100%
+}
+
 .hamburger {
   width: 45px;
   height: 30px;
