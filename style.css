@@ -6,6 +6,7 @@ body {
 .home-page {
   background-color: #fff;
   border-radius: 0 0 0 5%;
+  grid-column: 4/6;
 }
 
 #nav {
