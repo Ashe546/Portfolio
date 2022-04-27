@@ -14,9 +14,9 @@ body {
 }
 
 .logo-img {
-    border: 1px solid #c5bdbd; 
-    border-radius: 25%; 
-    width: 100%
+  border: 1px solid #c5bdbd; 
+  border-radius: 25%; 
+  width: 100%
 }
 
 .hamburger {
@@ -37,29 +37,29 @@ body {
 
 #home_presentation {
   background-image:
-    url("./image/Ellipse 11.png"),
-    url("./image/Rectangle 4.png"),
-    url("./image/Ellipse\ 3.png"),
-    url("./image/Ellipse\ 8.png"),
-    url("./image/Ellipse\ 5.png"),
-    url("./image/Rectangle\ 7.png"),
-    url("./image/Ellipse 12.png"),
-    url("./image/Ellipse 4.png"),
-    url("./image/Rectangle\ 5.png"),
-    url("./image/Ellipse\ 13.png"),
-    url("./image/Ellipse\ 15.png");
+  url("./image/Rectangle 4.png"),
+  url("./image/Ellipse\ 3.png"),
+  url("./image/Ellipse\ 8.png"),
+  url("./image/Ellipse\ 5.png"),
+  url("./image/Rectangle\ 7.png"),
+  url("./image/Ellipse 12.png"),
+  url("./image/Ellipse 4.png"),
+  url("./image/Rectangle\ 5.png"),
+  url("./image/Ellipse\ 13.png"),
+  url("./image/Ellipse\ 15.png")
+  url("./image/Ellipse\ 11.png");
   background-position:
-    19px 79px,
-    294px 68px,
-    323px 102px,
-    214px 110px,
-    125px 106px,
-    127px 98px,
-    370px 385px,
-    290px 509px,
-    240px 507px,
-    357px 392px,
-    106px 497px;
+  294px 68px,
+  323px 102px,
+  214px 110px,
+  125px 106px,
+  127px 98px,
+  370px 385px,
+  290px 509px,
+  240px 507px,
+  357px 392px,
+  106px 497px,
+  19px 79px;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;

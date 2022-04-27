@@ -1,5 +1,7 @@
 Portfolio: setup and mobile version skeleton
 
+Description: List of Projects i have made.
+
 Built With Major languages : Html and css Frameworks Technologies
 
 Getting Started Open index.html
