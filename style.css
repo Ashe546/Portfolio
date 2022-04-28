@@ -126,6 +126,10 @@ color: red;
   margin-right: 60%;
 }
 
+.work-section{
+  display: grid;
+}
+
 .work-title{
   position: static;
   align-items: center;
@@ -245,6 +249,12 @@ background: #EBEBFF;
 border-radius: 8px; 
 margin-left: 10px;
 }
+
+.tag:hover{
+  background-color: #18a0fa;
+}
+
+
 .tag-text {
     font-family: 'Poppins';
 font-style: normal;
