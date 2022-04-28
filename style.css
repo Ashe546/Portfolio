@@ -145,29 +145,29 @@ color: red;
 }
 
 .title {
-    margin-left: 5%;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
+  margin-left: 5%;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 .frame {
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
 }
 
 .detail {
-margin-left: 20px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 13px;
-line-height: 16px;
-color: #344563;
+  margin-left: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
 }
 
 .Detailp {
