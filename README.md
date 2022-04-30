@@ -1,15 +1,32 @@
 Portfolio: setup and mobile version skeleton
+Description
 
-Built With Major languages : Html and css Frameworks Technologies
+List of Projects i have made.
 
-Getting Started Open index.html
+Built With
+HTML , CSS ,JAVASCRIPT
 
-To get a local copy up and running follow these simple example steps. git clone https://github.com/Ashe546/Portfolio.git
+Getting Started
+open index.html in your prefered browser and you are good to go.
 
-GitHub: Ashe546@githubhandle Twitter: @twitterhandle LinkedIn: LinkedIn
+To get a local copy up and running follow these simple example steps.
+
+write git clone https://github.com/Ashe546/Portfolio.git on your terminal
+
+👤 Author1
+
+GitHub: Ashe546@githubhandle
+Twitter: Ashe213@twitterhandle
+LinkedIn: LinkedIn
 
 Feel free to check the issues page.
 
-Show your support Give a ⭐️ if you like this project!
+Show your support
+Give a ⭐️ if you like this project!
 
-Acknowledgments Hat tip to anyone whose code was used Inspiration etc 📝 License This project is MIT licensed.
+Acknowledgments
+Hat tip to anyone whose code was used
+Inspiration
+etc
+📝 License
+This project is MIT licensed.
