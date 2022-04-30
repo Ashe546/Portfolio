@@ -254,6 +254,9 @@ margin-left: 10px;
   background-color: #18a0fa;
 }
 
+.tag:active{
+  background-color: #2230D2;
+}
 
 .tag-text {
     font-family: 'Poppins';
@@ -285,8 +288,8 @@ background-color: white;
     background-color: #6070ff
 }
 
-.normal-button:a:visited{
-  background-color: blue;
+.normal-button:active{
+  background-color: #2230D2;
 }
 
 #about_me {
