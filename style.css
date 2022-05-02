@@ -224,7 +224,7 @@ color: #344563;
 }
 
 .tags {
-   display: flex;
+display: flex;
 flex-direction: row;
 align-items: center;
 padding: 0px;
@@ -233,21 +233,14 @@ width: auto;
 height: 24px;
 left: 0px;
 top: 180px; 
+margin-left: auto;
+margin-right: auto;
+
 }
 
 .tag {
-   display: flex;
-flex-direction: row;
-align-items: center;
-padding: 4px 12px;
-position: static;
-width: auto;
-height: 24px;
-left: 114px;
-top: 0px;
-background: #EBEBFF;
-border-radius: 8px; 
-margin-left: 10px;
+float: inline-end;
+margin-right: 15px;
 }
 
 .tag:hover{
