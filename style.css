@@ -549,15 +549,41 @@ background-color: white;
 }
 
 .contact-form {
-width: auto;
-height: 779px;
-left: 0px;
-top: 5410px;
-background: #6070FF;
-transform: matrix(1, 0, 0, -1, 0, 0);
-border-bottom-left-radius: 100px;
-margin-top: 50px;
+  width: auto;
+  height: 779px;
+  left: 0px;
+  top: 5410px;
+  background: #6070FF;
+  border-top-left-radius: 100px;
+  margin-top: 50px;
+  }
+
+.intro {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  color: #FFFFFF;
+  position: relative;
+  top: 100px;
+  margin-left: 105px;
 }
+.contact-description {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+color: #EBEBFF;
+position: relative;
+top: 90px;
+padding: 20px;
+}
+
+
 
 
 @media screen and (min-width: 1024px) {
