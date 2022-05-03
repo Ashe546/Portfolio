@@ -236,12 +236,18 @@ top: 180px;
 }
 
 .tag {
-float: inline-end;
-margin-right: 15px;
+   display: flex;
+flex-direction: row;
+align-items: center;
 padding: 4px 12px;
-color: #6373ff;
-background-color: #ebebff;
-border-radius: 5px;
+position: static;
+width: auto;
+height: 24px;
+left: 114px;
+top: 0px;
+background: #EBEBFF;
+border-radius: 8px; 
+margin-left: 10px;
 }
 
 .tag:hover{
@@ -542,7 +548,16 @@ background-color: white;
   margin-top: 100px;
 }
 
-
+.contact-form {
+width: 375px;
+height: 779px;
+left: 0px;
+top: 5410px;
+background: #6070FF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+border-bottom-left-radius: 100px;
+margin-top: 50px;
+}
 
 
 @media screen and (min-width: 1024px) {
