@@ -238,6 +238,10 @@ top: 180px;
 .tag {
 float: inline-end;
 margin-right: 15px;
+padding: 4px 12px;
+color: #6373ff;
+background-color: #ebebff;
+border-radius: 5px;
 }
 
 .tag:hover{
