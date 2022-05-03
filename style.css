@@ -633,7 +633,7 @@ background: #FFFFFF;
 border: 1px solid #CFD8DC;
 border-radius: 8px;
 margin-top: 20px;
-width: -webkit-fill-available;
+width: 100%;
 box-sizing: border-box;
 padding: 10px;
 }
