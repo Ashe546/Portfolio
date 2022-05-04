@@ -548,31 +548,117 @@ background-color: white;
   margin-top: 100px;
 }
 
+#contact {
+display: flex;
+flex-direction: column;
+}
+
+.contact-form {
+  width: auto;
+  height: 779px;
+  left: 0px;
+  top: 5410px;
+  background: #6070FF;
+  border-top-left-radius: 100px;
+  margin-top: 50px;
+  }
+
+  .img1 {
+position: absolute;
+width: 74.7px;
+height: 17.21px;
+left: 348px;
+top: 4383.4px;
+}
+.img2{
+  left: 366px;
+  top: 4409px;
+  position: absolute;
+}
+.img3{
+  left: 140px;
+  top: 4409px;
+  position: absolute;
+}
+.img4{
+left: 216px;
+top: 5007px;
+position: absolute;
+}
+.img5{
+left: 217px;
+top: 5034px;
+position: absolute;
+}
+
+.intro {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  color: #FFFFFF;
+  position: relative;
+  top: 100px;
+  margin-left: 105px;
+}
+.contact-description {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+color: #EBEBFF;
+position: relative;
+top: 90px;
+padding: 20px;
+}
+.form{
+flex-direction: column;  
+position: absolute;
+margin-top: 60px;
+width: -webkit-fill-available;
+margin-right: 40px;
+}
+
+.form-ul {
+  display: block;
+  flex-direction: column;
+  list-style: none;
+}
+.form-input {
+background: #FFFFFF;
+border: 1px solid #CFD8DC;
+border-radius: 8px;
+margin-top: 20px;
+width: -webkit-fill-available;
+box-sizing: border-box;
+padding: 10px;
+}
+#contact-1 ul{
+  display: block;
+}
 
 
+.contact-button{
+  padding: 10px;
+  color: #6070FF;
+  border-radius: 5px;
+  background-color: white;
+  border: none;
+  margin-top: 10px;
+}
+
+.contact-button:hover{
+  background-color: #00e5ff;
+}
+.contact-button:active{
+  background-color: #e100ff;
+}
 
 @media screen and (min-width: 1024px) {
-  .contact textarea {
-    width: 309px;
-    height: 100px;
-  }
-
-  .bottom-bar { display: none; }
-
-  .wrap .contact button {
-    align-self: center;
-    padding: 10px;
-  }
-
-  .contact {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .wrap .contact-parag { margin-bottom: 20px; }
-
-  .contact-title { margin-bottom: 0; }
-
   #nav {
     margin-top: 0;
     margin-right: 10.69%;

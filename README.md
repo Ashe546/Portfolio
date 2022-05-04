@@ -13,11 +13,16 @@ To get a local copy up and running follow these simple example steps.
 
 write git clone https://github.com/Ashe546/Portfolio.git on your terminal
 
-👤 Author1
+👤**Author1**
 
 GitHub: Ashe546@githubhandle
 Twitter: Ashe213@twitterhandle
 LinkedIn: LinkedIn
+👤 **Author2**
+
+- GitHub: [krisbobo](https://github.com/krisbobo)
+- Twitter: [ChrisboboSys](https://twitter.com/ChrisboboSys)
+- LinkedIn: [kiyong-christian](https://linkedin.com/in/kiyong-christian)
 
 Feel free to check the issues page.
 
