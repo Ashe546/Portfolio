@@ -451,6 +451,10 @@ body {
   margin-bottom: 5px;
 }
 
+.pro img:hover {
+  transform: scale(0.7);
+}
+
 #my_skills p {
   align-self: flex-start;
   margin: 15px 10% 0 15px;
