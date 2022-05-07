@@ -14,8 +14,6 @@ body {
 }
 
 .logo-img {
-  border: 1px solid #c5bdbd;
-  border-radius: 25%; 
   width: 100%;
 }
 
@@ -391,12 +389,10 @@ width: 100%;
 @keyframes slidein {
   from {
       margin-left: 100%;
-      width: 300%;
 }
 
   to {
-      margin-left: 0%;
-      width: 100%;
+      margin-right: 0%;
 }
 }
 
@@ -583,27 +579,27 @@ width: 100%;
   position: absolute;
   width: 74.7px;
   height: 17.21px;
-  left: 348px;
-  top: 4383.4px;
+  left: 329px;
+  top: 4083.4px;
 }
 .img2{
-  left: 366px;
-  top: 4409px;
+  left: 350px;
+  top: 4109px;
   position: absolute;
 }
 .img3{
   left: 140px;
-  top: 4409px;
+  top: 4040px;
   position: absolute;
 }
 .img4{
   left: 216px;
-  top: 5007px;
+  top: 4655px;
   position: absolute;
 }
 .img5{
   left: 217px;
-  top: 5034px;
+  top: 4684px;
   position: absolute;
 }
 
@@ -753,11 +749,26 @@ width: 100%;
     margin-top: 200px;
     justify-content: stretch;
     background-image: none;
+    width: auto;
+  }
+  #home_presentation p {
+    width: 50%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .card {
     display: flex;
     flex-direction: row;
+    height: auto;
+  }
+
+  .card-l{
+    display: flex;
+    flex-direction: row-reverse;
     height: auto;
   }
 
@@ -768,7 +779,85 @@ width: 100%;
 
   .res-frame{
     margin-left: 50px;
+    margin-right: 50px;
     display: flex;
     flex-direction: column;
   }
+
+  .work-title {
+    margin-left: 45%;
+  }
+
+  #about_me {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+  }
+  
+  .data-inf {
+    width: 50%;
+    padding: 80px 40px;
+    margin-top: 0px;
+  }
+
+  #my_skills {
+    width: 50%;
+    padding: 40px 80px;
+  }
+
+  #programmes {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    justify-content: left;
+  }
+
+  .pro {
+    flex-direction: column;
+    padding: 20px 20px;
+    margin-left: 10px;
+  }
+   .img1 {
+     left: 1660px;
+     top: 4517px;
+     position: absolute;
+   }
+
+   .img2 {
+    left: 1660px;
+    top: 4550px;
+    position: absolute;
+   }
+
+   .img3  {
+    left: 700px;
+    top: 4475px;
+    position: absolute;
+    }
+    
+    .img4 {
+      left: 216px;
+      top: 4795px;
+      position: absolute;
+    }
+
+    .img5 {
+      left: 216px;
+      top: 4823px;;
+      position: absolute;
+    }
+
+   .res-contact{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   .form {
+     width: inherit;
+   }
+
+   .intro {
+     margin-left: 30%;
+   }
 }
