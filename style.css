@@ -171,7 +171,6 @@ body {
   display: flex;
   flex-direction: column;
   padding: 16px;
-  height: 600px;
   background-color: #FFFFFF;
   width: 80%;
   margin-left: auto;
@@ -181,11 +180,7 @@ body {
 }
 
 .Snapshoot {
-  height: 40%;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 5%;
+width: 100%;
 }
 
 .title {
@@ -760,4 +755,20 @@ body {
     background-image: none;
   }
 
+  .card {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+  }
+
+  .res-snapshoot {
+    width: 50%;
+    height: max-content;
+  }
+
+  .res-frame{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+  }
 }
