@@ -14,8 +14,6 @@ body {
 }
 
 .logo-img {
-  border: 1px solid #c5bdbd;
-  border-radius: 25%; 
   width: 100%;
 }
 
@@ -107,7 +105,17 @@ body {
   text-decoration: none;
   display: inline-block;
 }
-.link-1:hover {
+
+.link-2 {
+  color: #7F8CFF;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.link-1 a:hover {
   color: red;
 }
 
@@ -152,40 +160,22 @@ body {
   margin-left: 30%;
  
 }
-.h-line {
-  position: static;
-  width: 327px;
-  height: 0px;
-  left: 0px;
-  top: 107px;
-  border: 1px solid #212121;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 24px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .card {
   display: flex;
   flex-direction: column;
   padding: 16px;
-  height: 600px;
   background-color: #FFFFFF;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 100px;
   margin-top: 20px;
   border-radius: 20px;
 }
 
 .Snapshoot {
-  height: 40%;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 5%;
+width: 100%;
 }
 
 .title {
@@ -205,20 +195,30 @@ body {
 }
 
 .detail {
-  margin-left: 20px;
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #6B778C;
+  margin-right: 25px;
+}
+
+.detail-1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
   color: #344563;
+  margin-right: 25px;
 }
 
 .Detailp {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 24px;
   color: #344563;
 }
@@ -245,9 +245,11 @@ body {
   height: 24px;
   left: 114px;
   top: 0px;
-  background: #EBEBFF;
+  background-color: #EBEBFF;
   border-radius: 8px; 
   margin-left: 10px;
+  border: none;
+  color: #6070FF;
 }
 
 .tag:hover{
@@ -270,26 +272,29 @@ body {
 
 .normal-button {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 12px;
+  flex-direction: column;
+  padding: 12px 12px;
   width: 124px;
-  height: 48px;
+  height: auto;
   left: 0px;
   top: calc(50% - 48px/2);
   border: 1px solid #6070FF;
   box-sizing: border-box;
   border-radius: 8px;
-  margin-top: 20px;
+  margin-top: 40px;
   background-color: white;
+  color: #6070FF;
 }
 
 .normal-button:hover{
-  background-color: #6070ff
+  background-color: #6070ff;
+  color: white;
 }
 
 .normal-button:active{
   background-color: #2230D2;
+  color: white;
 }
 
 #about_me {
@@ -362,7 +367,7 @@ body {
   border: 1px solid #396df2;
   border-radius: 5px;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 10px;
   align-self: baseline;
 }
 
@@ -396,12 +401,10 @@ body {
 @keyframes slidein {
   from {
       margin-left: 100%;
-      width: 300%;
 }
 
   to {
-      margin-left: 0%;
-      width: 100%;
+      margin-right: 0%;
 }
 }
 
@@ -449,11 +452,19 @@ body {
   background: #f7f7f9;
   border-radius: 8px;
   margin-bottom: 5px;
+  height: 100px;
+  width: 100px;
 }
+
 
 .pro img:hover {
   transform: scale(0.7);
 }
+
+.pro img {
+  margin-right: 30px;
+}
+
 
 #my_skills p {
   align-self: flex-start;
@@ -464,6 +475,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #000;
+  margin-right: 30px;
 }
 
 #frameworks {
@@ -512,6 +524,24 @@ body {
   color: #253858;
   margin-left: 15px;
   margin-top: 15px;
+}
+
+.horizontal {
+  height:1px;
+  border-width:0;
+  color:gray;
+  background-color:gray;
+  margin-top: 20px;
+}
+
+.frameworks p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
 }
 
 #skills-cards .pro p {
@@ -588,27 +618,27 @@ body {
   position: absolute;
   width: 74.7px;
   height: 17.21px;
-  left: 348px;
-  top: 4383.4px;
+  left: 329px;
+  top: 4083.4px;
 }
 .img2{
-  left: 366px;
-  top: 4409px;
+  left: 350px;
+  top: 4109px;
   position: absolute;
 }
 .img3{
   left: 140px;
-  top: 4409px;
+  top: 4040px;
   position: absolute;
 }
 .img4{
   left: 216px;
-  top: 5007px;
+  top: 4655px;
   position: absolute;
 }
 .img5{
   left: 217px;
-  top: 5034px;
+  top: 4684px;
   position: absolute;
 }
 
@@ -673,10 +703,12 @@ body {
 }
 
 .contact-button:hover{
-  background-color: #00e5ff;
+  background-color: #6070FF;
+  color: white;
 }
 .contact-button:active{
-  background-color: #e100ff;
+  background-color: #2230D2;
+  color: white;
 }
 
 @media screen and (min-width: 1024px) {
@@ -758,6 +790,136 @@ body {
     margin-top: 200px;
     justify-content: stretch;
     background-image: none;
+    width: auto;
+  }
+  #home_presentation p {
+    width: 60%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
   }
 
+  .card {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+  }
+
+  .card-l{
+    display: flex;
+    flex-direction: row-reverse;
+    height: auto;
+  }
+
+  .res-snapshoot {
+    width: 50%;
+    height: max-content;
+  }
+
+  .res-frame{
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .work-title {
+    margin-left: 45%;
+  }
+
+  #about_me {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-top-right-radius: 60px;
+  }
+  
+  .data-inf {
+    width: 50%;
+    padding: 80px 40px;
+    margin-top: 0px;
+  }
+
+  #my_skills {
+    width: 50%;
+    padding: 40px 80px;
+  }
+
+  #programmes {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    justify-content: left;
+  }
+
+  .pro {
+    flex-direction: column;
+    padding: 20px 20px;
+    margin-left: 10px;
+  }
+
+  .res-fram {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .res-fram img {
+    height: fit-content;
+    margin-top: auto;
+  }
+  
+   .img1 {
+     left: 1360px;
+     top: 3817px;
+     position: absolute;
+   }
+
+   .img2 {
+    left: 1360px;
+    top: 3850px;
+    position: absolute;
+   }
+
+   .img3  {
+    left: 600px;
+    top: 3825px;
+    position: absolute;
+    }
+    
+    .img4 {
+      left: 216px;
+      top: 4295px;
+      position: absolute;
+    }
+
+    .img5 {
+      left: 216px;
+      top: 4323px;;
+      position: absolute;
+    }
+
+    .img6 {
+    left: 1200px;
+    top: 4250px;
+    position: absolute;
+   }
+
+   .res-contact{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    text-align: center;
+   }
+
+   .form {
+     width: inherit;
+   }
+
+   .intro {
+     margin-left: 30%;
+   }
 }
