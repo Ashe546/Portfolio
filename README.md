@@ -12,6 +12,7 @@ open index.html in your prefered browser and you are good to go.
 To get a local copy up and running follow these simple example steps.
 
 write git clone https://github.com/Ashe546/Portfolio.git on your terminal
+Go to https://ashe546.github.io/Portfolio/ to view the project.
 
 👤**Author1**
 
