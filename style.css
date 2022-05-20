@@ -668,6 +668,16 @@ body {
   margin-top: 50px;
 }
 
+.error-message {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ebebff;
+  text-align: center;
+  margin: 14px auto 0 auto;
+}
+
 
 @media screen and (max-width: 760px) {
   .pro {
