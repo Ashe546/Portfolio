@@ -671,8 +671,13 @@ body {
 
 .error-message {
   font-weight: 400;
+<<<<<<< HEAD
   font-size: 17px;
   line-height: 20px;
+=======
+  font-size: 16px;
+  line-height: 28px;
+>>>>>>> 3c203cd43e344b0dcdf007b7f49a0e19434e747a
   color: #ebebff;
   text-align: center;
   margin: 14px auto 0 auto;
