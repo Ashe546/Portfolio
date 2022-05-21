@@ -117,15 +117,13 @@ const div = document.createElement('div');
 
 let modal = document.getElementById('myModal');
 const btn = document.querySelectorAll('.normal-button');
-let i = 0
-for (i of btn) {
-  i.addEventListener('click', function () {
+projects.forEach((project) => {
+  addEventListener('click', function () {
     modal.style.display = 'block';
-    let x = this.value
     modal.innerHTML =` <div class="popup-card">
 
 <div class = "popup-close">
-        <h1 class = "popup-h1">${projects[x].title}</h1>
+        <h1 class = "popup-h1">${project.title}</h1>
         
 </div>
         <div class = "popup-frame">
@@ -135,7 +133,7 @@ for (i of btn) {
           <li class="detail">2015</li>
         </ul>
         </div>
-        <div class = "popup-img-card" style = "background-image: url('.${projects[x].image}'); max-height: 300px; "></div>
+        <div class = "popup-img-card" style = "background-image: url('.${project.image}'); max-height: 300px; "></div>
 <div class = "popup-description">
 <div class = "desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -161,11 +159,9 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
 </div>
       </div> `;
     });
-}
+  });
 
 window.onclick = function (event) {
-
-
     if (event.target === modal) {
     modal.style.display = 'none';
 }
