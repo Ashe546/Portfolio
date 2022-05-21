@@ -177,7 +177,6 @@ closeIcon.addEventListener('click', () => {
 
 // Local Storage
 const inputFields = document.querySelectorAll('input');
-console.log(inputFields)
 inputFields.forEach((input) => {
   input.addEventListener('change', (event) => {
     let formData = JSON.parse(localStorage.getItem('formData'));
