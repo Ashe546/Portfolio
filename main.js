@@ -24,7 +24,7 @@ form.addEventListener('submit', (event) => {
 });
 
 const projects = [
-  
+
   {
     title: 'Tonic',
     roles: { company: 'Canopy', position: ['Back End Dev', '2015'] },
@@ -36,10 +36,10 @@ const projects = [
     livelink: { link: 'http://felix45.github.io/portfolio', text: 'See live' },
     seesource: { link: 'http://github.com/felix45/portfolio', text: 'See Source' },
     seeproject: 'See Project',
-    htmlClass: { article: ['grid-item', 'card'], cardImage: ['card-image'], cardDescription: ['card-description']},
+    htmlClass: { article: ['grid-item', 'card'], cardImage: ['card-image'], cardDescription: ['card-description'] },
     cssStyle: '',
   },
-  
+
   {
     title: 'Multi-Post Stories',
     roles: { company: 'Facebook', position: ['Full Stack Dev', '2015'] },
@@ -51,10 +51,10 @@ const projects = [
     livelink: { link: 'https://felix45.github.io/portfolio', text: 'See live' },
     seesource: { link: 'https://github.com/felix45/portfolio', text: 'See Source' },
     seeproject: 'See Project',
-    htmlClass: { article: ['grid-item', 'card', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1']},
+    htmlClass: { article: ['grid-item', 'card', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1'] },
     cssStyle: 'card-l',
   },
-  
+
   {
     title: 'Facebook 360',
     roles: { company: 'Facebook', position: ['Full Stack Dev', '2015'] },
@@ -66,10 +66,10 @@ const projects = [
     livelink: { link: 'https://felix45.github.io/portfolio', text: 'See live' },
     seesource: { link: 'https://github.com/felix45/portfolio', text: 'See Source' },
     seeproject: 'See Project',
-    htmlClass: { article: ['grid-item', 'card', 'flex-item-2', 'hide-ruby'], cardImage: ['card-image'], cardDescription: ['card-description']},
+    htmlClass: { article: ['grid-item', 'card', 'flex-item-2', 'hide-ruby'], cardImage: ['card-image'], cardDescription: ['card-description'] },
     cssStyle: '',
   },
-  
+
   {
     title: 'Uber Navigation',
     roles: { company: 'Uber', position: ['Lead Developer', '2018'] },
@@ -81,16 +81,16 @@ const projects = [
     livelink: { link: 'https://felix45.github.io/portfolio', text: 'See live' },
     seesource: { link: 'http://github.com/felix45/portfolio', text: 'See Source' },
     seeproject: 'See Project',
-    htmlClass: { article: ['grid-item', 'card', 'flex-item-3', 'flex-item-last', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1']},
+    htmlClass: { article: ['grid-item', 'card', 'flex-item-3', 'flex-item-last', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1'] },
     cssStyle: 'card-l',
 
   },
 ];
 
 const section = document.getElementById('portfolio');
-projects.forEach((project)=>{
+projects.forEach( (project) => {
 
-const div = document.createElement('div');
+  const div = document.createElement('div');
   div.className = 'main-container';
   div.innerHTML = ` <div class="${project.cssStyle} card"> 
 <div class="res-snapshoot">
@@ -115,12 +115,12 @@ const div = document.createElement('div');
   section.appendChild(div);
 });
 
-let modal = document.getElementById('myModal');
+const modal = document.getElementById('myModal');
 const btn = document.querySelectorAll('.normal-button');
 projects.forEach((project) => {
-  addEventListener('click', function () {
+  addEventListener('click', () => {
     modal.style.display = 'block';
-    modal.innerHTML =` <div class="popup-card">
+    modal.innerHTML = ` <div class="popup-card">
 
 <div class = "popup-close">
         <h1 class = "popup-h1">${project.title}</h1>
@@ -158,11 +158,11 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
 </div>
 </div>
       </div> `;
-    });
   });
+});
 
 window.onclick = function (event) {
-    if (event.target === modal) {
+  if (event.target === modal) {
     modal.style.display = 'none';
-}
-}
+  }
+};
