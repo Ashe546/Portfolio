@@ -9,10 +9,7 @@ hamburger.addEventListener('click', () => {
 document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click', () => {
   hamburger.classList.remove('active');
   navMenu.classList.remove('active');
-   console.log("err")
 }));
-
-// Form Validation
 
 const form = document.querySelector('.form');
 form.addEventListener('submit', (event) => {
@@ -26,9 +23,8 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-// popup
-
 const projects = [
+  
   {
     title: 'Tonic',
     roles: { company: 'Canopy', position: ['Back End Dev', '2015'] },
@@ -43,6 +39,7 @@ const projects = [
     htmlClass: { article: ['grid-item', 'card'], cardImage: ['card-image'], cardDescription: ['card-description']},
     cssStyle: '',
   },
+  
   {
     title: 'Multi-Post Stories',
     roles: { company: 'Facebook', position: ['Full Stack Dev', '2015'] },
@@ -57,6 +54,7 @@ const projects = [
     htmlClass: { article: ['grid-item', 'card', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1']},
     cssStyle: 'card-l',
   },
+  
   {
     title: 'Facebook 360',
     roles: { company: 'Facebook', position: ['Full Stack Dev', '2015'] },
@@ -71,6 +69,7 @@ const projects = [
     htmlClass: { article: ['grid-item', 'card', 'flex-item-2', 'hide-ruby'], cardImage: ['card-image'], cardDescription: ['card-description']},
     cssStyle: '',
   },
+  
   {
     title: 'Uber Navigation',
     roles: { company: 'Uber', position: ['Lead Developer', '2018'] },
@@ -84,16 +83,16 @@ const projects = [
     seeproject: 'See Project',
     htmlClass: { article: ['grid-item', 'card', 'flex-item-3', 'flex-item-last', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1']},
     cssStyle: 'card-l',
+
   },
 ];
 
 const section = document.getElementById('portfolio');
-projects.forEach((project, index) => {
+projects.forEach((project)=>{
 
 const div = document.createElement('div');
-div.className = 'main-container';
-div.innerHTML =
-` <div class="${project.cssStyle} card"> 
+  div.className = 'main-container';
+  div.innerHTML = ` <div class="${project.cssStyle} card"> 
 <div class="res-snapshoot">
  <img class="Snapshoot" src= ${project.image}> 
  </div>
@@ -112,19 +111,18 @@ div.innerHTML =
       </div>
        <button type="button" value = ${projects.indexOf(project)} class="normal-button">${project.seeproject}</button> 
      </div>
-</div>`;  
- section.appendChild(div)
+</div>`;
+  section.appendChild(div);
 });
 
-var modal = document.getElementById("myModal");
-const btn = document.querySelectorAll('.normal-button')
-
+let modal = document.getElementById('myModal');
+const btn = document.querySelectorAll('.normal-button');
+let i = 0
 for (i of btn) {
-i.addEventListener('click', function() {
-modal.style.display = "block";
-var x = this.value
-modal.innerHTML =
-` <div class="popup-card">
+  i.addEventListener('click', function () {
+    modal.style.display = 'block';
+    let x = this.value
+    modal.innerHTML =` <div class="popup-card">
 
 <div class = "popup-close">
         <h1 class = "popup-h1">${projects[x].title}</h1>
@@ -162,24 +160,13 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
 </div>
 </div>
       </div> `;
-});
+    });
 }
 
-window.onclick = function(event) {
-if (event.target == modal) {
-modal.style.display = "none";
+window.onclick = function (event) {
+
+
+    if (event.target === modal) {
+    modal.style.display = 'none';
 }
 }
-
-const spans = document.querySelectorAll(".close1");
-
-spans.forEach(span => {
-   span.addEventListner('click', (e)=>{
-     console.log('someone hit me');
-   });
-});
-console.log(spans)
-console.log(modal)
-
-
-
