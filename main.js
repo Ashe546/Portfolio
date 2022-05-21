@@ -9,6 +9,7 @@ hamburger.addEventListener('click', () => {
 document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click', () => {
   hamburger.classList.remove('active');
   navMenu.classList.remove('active');
+   console.log("err")
 }));
 
 // Form Validation
@@ -85,3 +86,99 @@ const projects = [
     cssStyle: 'card-l',
   },
 ];
+
+const section = document.getElementById('portfolio');
+projects.forEach((project, index) => {
+
+const div = document.createElement('div');
+div.className = 'main-container';
+div.innerHTML =
+` <div class="${project.cssStyle} card"> 
+<div class="res-snapshoot">
+ <img class="Snapshoot" src= ${project.image}> 
+ </div>
+  <div class="res-frame">
+      <h1 class="title">${project.title}</h1> 
+      <ul class="frame">
+      <li class="detail-1">CANOPY</li>
+      <li class="detail">BACK END DEV</li>
+      <li class="detail">2015</li>
+      </ul>
+      <p class="detailp">${project.description}</p>
+      <div class="tags"> 
+      <button class="tag">html</button> 
+      <button class="tag">css</button>
+      <button class="tag">javascript</button>
+      </div>
+       <button type="button" value = ${projects.indexOf(project)} class="normal-button">${project.seeproject}</button> 
+     </div>
+</div>`;  
+ section.appendChild(div)
+});
+
+var modal = document.getElementById("myModal");
+const btn = document.querySelectorAll('.normal-button')
+
+for (i of btn) {
+i.addEventListener('click', function() {
+modal.style.display = "block";
+var x = this.value
+modal.innerHTML =
+` <div class="popup-card">
+
+<div class = "popup-close">
+        <h1 class = "popup-h1">${projects[x].title}</h1>
+        <button class = "cls-btn close" ><img src = "./image/Disabled.png"></button>
+</div>
+        <div class = "popup-frame">
+        <ul class="popup-frame">
+          <li class="detail-1">CANOPY</li>
+          <li class="detail">BACK END DEV</li>
+          <li class="detail">2015</li>
+        </ul>
+        </div>
+        <div class = "popup-img-card" style = "background-image: url('.${projects[x].image}'); max-height: 300px; "></div>
+<div class = "popup-description">
+<div class = "desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, </div>
+<div class = "pop-frame">  
+ <div class="tags">
+<button class="tag">html</button>
+<button class="tag">css</button>
+<button class="tag">javascript</button>
+</div>
+<div class="tags popup-tag">
+<button class="tag">github</button>
+<button class="tag">ruby</button>
+<button class="tag">Bootstraps</button>
+</div>
+<hr class = "popup-hr">
+<div class = "popup-link-button">
+<button class = "popup-button">See More <img src = "./image/pop.svg"></button>
+<button class = "popup-button">See More <img src = "./image/Icon-GitHub.svg"></button>
+</div>
+</div>
+      </div> `;
+});
+}
+
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+
+document.querySelectorAll('.cls-btn').forEach((n) => n.addEventListener('click', () => {
+ modal.style.display = "none";
+ console.log("err")
+}));
+
+
+
+
+
+
+
