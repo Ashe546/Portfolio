@@ -88,7 +88,7 @@ const projects = [
 ];
 
 const section = document.getElementById('portfolio');
-projects.forEach((project) =>{
+projects.forEach((project) => {
 
   const div = document.createElement('div');
   div.className = 'main-container';
