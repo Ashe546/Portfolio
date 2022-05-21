@@ -88,7 +88,7 @@ const projects = [
 ];
 
 const section = document.getElementById('portfolio');
-projects.forEach( (project) => {
+projects.forEach((project) =>{
 
   const div = document.createElement('div');
   div.className = 'main-container';
@@ -116,12 +116,10 @@ projects.forEach( (project) => {
 });
 
 const modal = document.getElementById('myModal');
-const btn = document.querySelectorAll('.normal-button');
 projects.forEach((project) => {
-  addEventListener('click', () => {
+  document.querySelectorAll('.normal-button').forEach((n) => n.addEventListener('click', () => {
     modal.style.display = 'block';
     modal.innerHTML = ` <div class="popup-card">
-
 <div class = "popup-close">
         <h1 class = "popup-h1">${project.title}</h1>
         
@@ -158,7 +156,7 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
 </div>
 </div>
       </div> `;
-  });
+  }));
 });
 
 window.onclick = function (event) {
