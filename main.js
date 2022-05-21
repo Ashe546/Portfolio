@@ -165,7 +165,6 @@ window.onclick = function (event) {
 };
 
 const inputFields = document.querySelectorAll('input');
-console.log(inputFields)
 inputFields.forEach((input) => {
   input.addEventListener('change', (event) => {
     let formData = JSON.parse(localStorage.getItem('formData'));
