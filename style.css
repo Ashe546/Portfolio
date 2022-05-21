@@ -671,13 +671,8 @@ body {
 
 .error-message {
   font-weight: 400;
-<<<<<<< HEAD
-  font-size: 17px;
-  line-height: 20px;
-=======
   font-size: 16px;
   line-height: 28px;
->>>>>>> 3c203cd43e344b0dcdf007b7f49a0e19434e747a
   color: #ebebff;
   text-align: center;
   margin: 14px auto 0 auto;
@@ -1096,38 +1091,38 @@ color: #fff;
 
   .img1 {
     left: 1360px;
-    top: 3817px;
+    top: 3517px;
     position: absolute;
   }
 
   .img2 {
     left: 1360px;
-    top: 3850px;
+    top: 3550px;
     position: absolute;
   }
 
   .img3 {
     left: 600px;
-    top: 3825px;
+    top: 3425px;
     position: absolute;
   }
 
   .img4 {
     left: 216px;
-    top: 4295px;
+    top: 3795px;
     position: absolute;
   }
 
   .img5 {
     left: 216px;
-    top: 4323px;
+    top: 3823px;
     ;
     position: absolute;
   }
 
   .img6 {
     left: 1200px;
-    top: 4250px;
+    top: 3850px;
     position: absolute;
   }
 
@@ -1259,7 +1254,4 @@ background-color: rgba(0,0,0,0.4);
   justify-content: space-between;
 }
 
-.close {
-  margin-right: 20px;
-  margin-top: 10px;
-}
+

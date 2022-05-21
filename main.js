@@ -128,7 +128,7 @@ modal.innerHTML =
 
 <div class = "popup-close">
         <h1 class = "popup-h1">${projects[x].title}</h1>
-        <button class = "cls-btn close" ><img src = "./image/Disabled.png"></button>
+        
 </div>
         <div class = "popup-frame">
         <ul class="popup-frame">
@@ -171,14 +171,15 @@ modal.style.display = "none";
 }
 }
 
-document.querySelectorAll('.cls-btn').forEach((n) => n.addEventListener('click', () => {
- modal.style.display = "none";
- console.log("err")
-}));
+const spans = document.querySelectorAll(".close1");
 
-
-
-
+spans.forEach(span => {
+   span.addEventListner('click', (e)=>{
+     console.log('someone hit me');
+   });
+});
+console.log(spans)
+console.log(modal)
 
 
 
