@@ -89,7 +89,6 @@ const projects = [
 
 const section = document.getElementById('portfolio');
 projects.forEach((project) => {
-
   const div = document.createElement('div');
   div.className = 'main-container';
   div.innerHTML = ` <div class="${project.cssStyle} card"> 
