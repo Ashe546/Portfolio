@@ -123,15 +123,15 @@
         <h1 class="intro">Contact Me</h1>
         <p class="contact-description">If you have an application you are interested in developing,
           a feature that you need built or a project that needs coding. I’d love to help with it</p>
-        <form class="form" id="form" action="https://formspree.io/f/moqrpbja" method="post">
+        <form class="form" id="contactForm" action="https://formspree.io/f/moqrpbja" method="post">
           <ul class="form-ul">
-            <li><input class="form-input" id="name" type="text" maxlength="30" placeholder="Name" required></li>
-            <li><input class="form-input" id="email" type="email" placeholder="Email" required></li>
-            <li><textarea class="form-input" id="message" name="desc" cols="30" rows="10"
-                placeholder="write your message here" maxlength="500" required></textarea></li>
+            <li><input class="form-input" id="name" name="name" type="text" maxlength="30" placeholder="Name" required></li>
+            <li><input class="form-input" id="email" name="email" type="email" placeholder="Email" required></li>
+            <li><textarea class="form-input" id="message" name="message" cols="30" rows="10" placeholder="write your message here" maxlength="500" required></textarea></li>
             <li>
               <p class="error-message"></p>
             </li>
+            <li><input id="submit-button" type="submit" value="Get In Touch"></li>
           </ul>
         </form>
       </div>

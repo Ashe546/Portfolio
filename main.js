@@ -163,3 +163,37 @@ window.onclick = function (event) {
     modal.style.display = 'none';
   }
 };
+
+const inputFields = document.querySelectorAll('input');
+console.log(inputFields)
+inputFields.forEach((input) => {
+  input.addEventListener('change', (event) => {
+    let formData = JSON.parse(localStorage.getItem('formData'));
+    if (!formData) {
+      formData = { name: '', email: '', message: '' };
+    }
+    formData[event.target.name] = event.target.value;
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
+});
+
+const textArea = document.getElementById('message');
+textArea.addEventListener('change', (event) => {
+  let formData = JSON.parse(localStorage.getItem('formData'));
+  if (!formData) {
+    formData = { name: '', email: '', message: '' };
+  }
+  formData.message = event.target.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+function retrieveFormData() {
+  const formData = JSON.parse(localStorage.getItem('formData'));
+  if (formData) {
+    document.getElementById('name').value = formData.name;
+    document.getElementById('email').value = formData.email;
+    document.getElementById('message').value = formData.message;
+  }
+}
+
+retrieveFormData();
